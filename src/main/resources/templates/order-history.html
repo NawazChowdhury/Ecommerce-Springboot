@@ -35,6 +35,7 @@
                 <td th:text="${order.id}"></td>
                 <td th:text="${#dates.format(order.orderDate, 'yyyy-MM-dd HH:mm')}"></td>
                 <td th:text="${order.totalAmount}"></td>
+                <td th:text="${order.status}"></td>
                 <td><a th:href="@{'/order-details/' + ${order.id}}" class="btn btn-info">View Details</a></td>
             </tr>
             </tbody>
